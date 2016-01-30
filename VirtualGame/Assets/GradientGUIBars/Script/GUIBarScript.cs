@@ -9,6 +9,7 @@ public class GUIBarScript : MonoBehaviour {
 	//for the CurrentValue, and the Value it will be after the update
 	private float CurrentValue;
 	public float Value;
+    public float tamanoMenos = 50;
 
 	//FadeValue is current amount the bar is faded 
 	private float FadeValue;
@@ -58,15 +59,15 @@ public class GUIBarScript : MonoBehaviour {
 		//if you don't have a background texture i won't draw it
 		if (Background != null)
 		{
-			GUI.DrawTexture(new Rect(Position.x,Position.y,Background.width * ScaleSize,Background.height * ScaleSize),Background);
+			GUI.DrawTexture(new Rect(Position.x,Position.y,Background.width * ScaleSize- tamanoMenos, Background.height * ScaleSize - tamanoMenos),Background);
 		}
 
-		GUI.DrawTexture(new Rect(Position.x,Position.y,ValueBar.width * ScaleSize,ValueBar.height * ScaleSize),ValueBar);
+		GUI.DrawTexture(new Rect(Position.x,Position.y,ValueBar.width * ScaleSize - tamanoMenos, ValueBar.height * ScaleSize - tamanoMenos),ValueBar);
 
 		//if you don't have a foreground texture i won't draw it
 		if (Foreground != null)
 		{
-			GUI.DrawTexture(new Rect(Position.x,Position.y,Foreground.width * ScaleSize,Foreground.height * ScaleSize),Foreground);
+			GUI.DrawTexture(new Rect(Position.x,Position.y,Foreground.width * ScaleSize- tamanoMenos, Foreground.height * ScaleSize- tamanoMenos),Foreground);
 		}
 
 		//if display text is enabled the display text will be drawn
