@@ -1,0 +1,17 @@
+Anexos Archivos de Terceros Usados en el Juego
+
+Audio
+1- in laetare ierusalen
+2- di evantile doomed to inmmortality
+3- water dips-pagina: freesfx.co.uk
+
+Model y Prefabs
+- GradientGUIBars-página: assetstore Unity
+- Prefab Hembrita- página assetstore Unity
+- Prefab Player- página assetstore Unity
+- Prefab Player1- página assetstore Unity
+- SuitPack - página assetstore Unity
+- Raw Mocap Data - página assetstore Unity
+- Standard Assets - Unity Models Internos
+- trap3 - página assetstore Unity
+
