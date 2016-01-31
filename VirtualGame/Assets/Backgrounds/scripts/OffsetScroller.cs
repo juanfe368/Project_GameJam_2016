@@ -2,13 +2,16 @@
 using System.Collections;
 
 public class OffsetScroller : MonoBehaviour {
-    public float scrollSpeed;
+    private float scrollSpeed = 0;
     private Vector2 savedOffset;
 	void Start () {
         savedOffset = GetComponent<Renderer>().sharedMaterial.GetTextureOffset("_MainTex");
 
     }
 	
+    public void setScrollSpeed(float inpSpeed){
+        scrollSpeed = inpSpeed;
+    }
 	void Update () {
         //float x = Mathf.Repeat();
         Vector2 offset = new Vector2(Time.time * scrollSpeed, 0);
