@@ -30,7 +30,7 @@ public class Trampas : MonoBehaviour {
 			activarConCamara = true;
 			//transform.Translate(Vector3.Lerp(transform.position, new Vector3(0,(transform.position.y + cantidadSubir),0),2f));
 		}
-		else if(other.gameObject.name == ""){
+		else if(other.gameObject.name == "ThirdPersonController"){
 			
 		}
 	}

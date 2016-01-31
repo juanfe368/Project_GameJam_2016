@@ -45,22 +45,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AllStarCharacterLibray\Scripts\CamTarget.cs" />
+     <Compile Include="Assets\AllStarCharacterLibray\Scripts\CharacterDemoController.cs" />
+     <Compile Include="Assets\AllStarCharacterLibray\Scripts\MouseOrbit.cs" />
+     <Compile Include="Assets\AllStarCharacterLibray\Scripts\Outfitter.cs" />
+     <Compile Include="Assets\AllStarCharacterLibray\Scripts\RootMotionOff.cs" />
+     <Compile Include="Assets\AllStarCharacterLibray\Scripts\SkinnedMeshCombiner.cs" />
      <Compile Include="Assets\Backgrounds\scripts\OffsetScroller.cs" />
      <Compile Include="Assets\Backgrounds\scripts\movieTexture.cs" />
      <Compile Include="Assets\GradientGUIBars\Script\ControlGUIScript.cs" />
      <Compile Include="Assets\GradientGUIBars\Script\GUIBarScript.cs" />
      <Compile Include="Assets\GradientGUIBars\Script\MoreButtonScript.cs" />
      <Compile Include="Assets\GradientGUIBars\Script\MoveCameraScript.cs" />
+     <Compile Include="Assets\Intro.cs" />
+     <Compile Include="Assets\Intro\Scripts\ClickJugar.cs" />
+     <Compile Include="Assets\Intro\Scripts\Parallax.cs" />
+     <Compile Include="Assets\Intro\Scripts\clickAbout.cs" />
+     <Compile Include="Assets\Intro\Scripts\clicks.cs" />
      <Compile Include="Assets\aminaciones\BotControlScript.cs" />
      <Compile Include="Assets\aminaciones\UnityTemplates\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
      <Compile Include="Assets\aminaciones\UnityTemplates\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
      <Compile Include="Assets\aminaciones\UnityTemplates\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
+     <Compile Include="Assets\javascript\CamaraMain.cs" />
      <Compile Include="Assets\javascript\CamareMain.cs" />
+     <Compile Include="Assets\javascript\CambioEscenario.cs" />
      <Compile Include="Assets\javascript\ColisionadorEvent.cs" />
+     <Compile Include="Assets\javascript\Destructor.cs" />
      <Compile Include="Assets\javascript\Esfera.cs" />
+     <Compile Include="Assets\javascript\FadeInOut.cs" />
+     <Compile Include="Assets\javascript\GameOverManager.cs" />
+     <Compile Include="Assets\javascript\MantenerEje.cs" />
      <Compile Include="Assets\javascript\MovimientoJugador.cs" />
      <Compile Include="Assets\javascript\Test.cs" />
      <Compile Include="Assets\javascript\Trampas.cs" />
+     <Compile Include="Assets\javascript\VidaScript.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
