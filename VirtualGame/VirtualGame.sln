@@ -7,6 +7,8 @@ Project("{1FC81797-A960-B379-9DC9-DF1486723202}") = "VirtualGame", "Assembly-CSh
 EndProject
 Project("{1FC81797-A960-B379-9DC9-DF1486723202}") = "VirtualGame", "Assembly-CSharp-Editor.csproj", "{18FCC407-B64F-65CD-EBCA-6FE7623FCBDE}"
 EndProject
+Project("{1FC81797-A960-B379-9DC9-DF1486723202}") = "VirtualGame", "Assembly-UnityScript.unityproj", "{0972A41E-9F05-F59F-A6DE-506ED5C5002F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{18FCC407-B64F-65CD-EBCA-6FE7623FCBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18FCC407-B64F-65CD-EBCA-6FE7623FCBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18FCC407-B64F-65CD-EBCA-6FE7623FCBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0972A41E-9F05-F59F-A6DE-506ED5C5002F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0972A41E-9F05-F59F-A6DE-506ED5C5002F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0972A41E-9F05-F59F-A6DE-506ED5C5002F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0972A41E-9F05-F59F-A6DE-506ED5C5002F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
