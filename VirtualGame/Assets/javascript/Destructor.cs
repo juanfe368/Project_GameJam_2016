@@ -5,8 +5,9 @@ public class Destructor : MonoBehaviour {
 
 	public GameObject puntoInicial;
 	public GameObject player;
-	// Use this for initialization
-	void Start () {
+    public string nombreEscena = "PiesEscena";
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
@@ -17,8 +18,18 @@ public class Destructor : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Player") {
-			Instantiate (player, puntoInicial.transform.position, Quaternion.identity);
-			Destroy (other.gameObject);
+            if (puntoInicial != null && player != null)
+            {
+                Instantiate(player, puntoInicial.transform.position, Quaternion.identity);
+                Destroy(other.gameObject);
+            }
+            bool reiniciarEscena = true;
+            if (reiniciarEscena)
+            {
+                //string nombreEscena = "PiesEscena";
+                //Debug.Log("CESAR: ENTRO AL LOAD DE BACKGROUND");
+                Application.LoadLevel(nombreEscena);
+            }
 		}
 	}
 }

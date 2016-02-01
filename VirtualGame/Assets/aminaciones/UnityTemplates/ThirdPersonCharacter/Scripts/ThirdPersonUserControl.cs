@@ -12,8 +12,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
+        public AudioSource audio;
 
-        
         private void Start()
         {
             // get the transform of the main camera
@@ -47,9 +47,27 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             // read inputs
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
-            //float v = CrossPlatformInputManager.GetAxis("Vertical");
-            bool crouch = Input.GetKey(KeyCode.C);
+            if (audio != null)
+            {
+                audio.volume = 0f;
+            }
+            if (h != 0.0f && m_Jump==false)
+            {//OPRIMIO UN LADO  Y NO ESTOY SALTANDO
+                if (GetComponent<AudioSource>() != null)
+                {
+                    audio = GetComponent<AudioSource>();
+                }
 
+
+                if (audio != null)
+                {   
+                    //PONGO EL VOLUMEN
+                    audio.volume = 1f;
+                }
+            }
+                //float v = CrossPlatformInputManager.GetAxis("Vertical");
+                bool crouch = Input.GetKey(KeyCode.C);
+            Debug.Log("CROUCH:" + crouch);
             // calculate move direction to pass to character
             if (m_Cam != null)
             {
